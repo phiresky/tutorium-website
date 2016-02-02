@@ -1,0 +1,111 @@
+<h2>Folien</h2>
+<div id="robinfol" class="panel-group">
+	<script type=λ>
+	λtuts→(<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#robinfol" href="#rtutλkey">
+					λ(key+1). Tutorium (λtopics)
+				</a>
+			</h4>
+		</div><div id="rtutλkey" class="panel-collapse collapse λisOpen?in">
+			<div class="panel-body">
+				<p><h3><a href="robin/λ(key<9?'0'+(key+1):(key+1)).pdf">Folien</a></h3><br>
+					Inhalt:<ul> λtopics.split(",")→(<li>λval</li>) </ul>
+				</p>
+				λfiles?(<p>Dateien:
+				<ul>
+					λfiles→(
+						<li><a href="view.php?f=robin/λkey">λkey (λval)</a>
+					)
+				</ul>
+				</p>)
+				λtext?(<p>λtext</p>)
+			</div>
+		</div>
+	</div>)
+	</script>
+</div>
+<script type=lul id="weiterf">
+	<div>
+		Quellcode von meinen Abschlussaufgaben (Aufgabenstellung+Lösung): <a href="https://github.com/phiresky/kit-programmieren-final-exam-ws13">auf Github</a>
+	</div>
+	Andere vielleicht interessante Dinge:
+	<ul>
+		<li><a href="https://education.github.com/pack">Github student developer pack</a>
+		<li>Ein <i>super</i>tolles Android-Spiel, geschrieben mit <a href="http://libgdx.badlogicgames.com/">libgdx</a>: <a href="https://play.google.com/store/apps/details?id=de.phiresky.phireseas">Play Store</a>. Wenn jemand den Quellcode anschauen will kann er fragen.
+		<li>Paar andere Projekte von mir auf Github (in TypeScript, Python, C++): <a href="https://github.com/phiresky">https://github.com/phiresky</a>
+		<li><a href="https://www.youtube.com/watch?v=FavUpD_IjVY">Vollständiger Quellcode von Windows 7</a>
+	</ul>
+</script>
+<script>
+var tuts = [{
+	topics:"Compiler / Installation, Datentypen, Klassen, Objekte",
+	files:{"HelloWorld.java":"Minimalbeispiel"}
+}, {
+	topics:"Enums, Variablen, Methoden, Konstruktoren, Schleifen",
+	files:{
+		"Call.java":"Methodenaufruf",
+		"Point.java":"Modellierung eines Punktes",
+		"Square.java":"Modellierung eines Quadrats",
+		"PrintEvenNumbers.java":"Ausgabe gerader Zahlen"
+	}
+}, {
+	topics:"Übungsblatt 1 und 2, Schleifen, Überladen, Aufgaben",
+	files:{"BankAccount.java":"Lösung Aufgabe 1"}
+}, {
+	topics:"Arrays, Matrizen, Pakete",
+	files:{
+		"Sinus.java":"horizontale und verticale Ausgabe",
+		"Einmaleins.java":"",
+		"ReadFile.java":"Beispiel zum Dateien lesen"
+	}
+}, {
+	topics:"Sichtbarkeiten, Listen, Matrizen, Aufgaben",
+	files:{
+		"Average.java":"Durchschnitt eines String-Arrays",
+		"MatrixUtil.java":"Matrizenmultiplikation und Addition"
+	}
+}, {
+	topics:"Listen, java.util, JavaDoc",
+	files:{
+		"List.java":"Simple verlinkte Listenimplementierung",
+		"SemiFib.java":"Lösung der Aufgabe",
+		"Parens.java":"Verifizierung von Klammerausdrücken mit einem Stack",
+	}
+}, {
+	topics:"Vererbung",
+	files:{
+		"TodoList.java":"Einlesen der Todo-Aufgaben einer Person",
+		"Main.java":"Animal,Cow,Dog,Cat - Vererbungsbeispiel"
+	}
+}, {
+	topics:"Interfaces, Generics, Rekursion",
+}, {
+	topics:"Exceptions, Debugging, Generics (Wdh)",
+	files:{"Ball.java":"throw new Ball()"}
+}, {
+	topics:"Fehler, Assertions, Maps, Suche, Sortierung",
+	files:{"BinarySearch.java":"Simple Implementierung einer generischen Binärsuche (ungetestet)"}
+}, {
+	topics:"Parser, (Suche, Sortierung)",
+	files:{"JSONParser.java":"Parser/Validator für JSON","JSONStream.java":"Hilfsklasse zur Bereitstellung von read(),peek(),expect()"}
+}, {
+	topics:"Abschlussaufgaben, Designprinzipien, Weiterführendes (Mobile/Spieleentwicklung)",
+	text:weiterf.innerHTML,
+	isOpen:true
+}];
+//tuts.forEach(function(tut,id) {tut.id = ++id<10?("0"+id):id;});
+</script>
+<h2>Kontakt</h2>Mail: usdnb ∂ student.kit.edu
+<h2>Statistik</h2>
+<a href="/robin/stats.php">Endstatistik</a>
+<div id="submission_chart"></div>
+<!--<small>Graph geklaut aus Praktomat. Letztes Update: <span id=upd></span></small>
+<script src='http://code.highcharts.com/highcharts.js'></script>
+<script>
+	div_to_render_into=title=scale_items=ratings="hueuhe";
+</script><script src='robin/prakto.js'></script><script>
+	$(function(){new Highcharts.Chart(charts[0])});
+	$('#upd').text(lastUpdate);
+</script>-->
