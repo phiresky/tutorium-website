@@ -1,3 +1,6 @@
 [submodule "lib/lam_fill"]
 	path = lib/lam_fill
 	url = https://github.com/phiresky/lam_fill
+[submodule "2014ws/lib/lam_fill"]
+	path = 2014ws/lib/lam_fill
+	url = https://github.com/phiresky/lam_fill
